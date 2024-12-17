@@ -1,4 +1,4 @@
-module github.com/wal-g/tracelog
+module github.com/EinKrebs/tracelog
 
 go 1.23.4
 
