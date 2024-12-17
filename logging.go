@@ -16,6 +16,8 @@ const (
 	timeFlags      = log.LstdFlags | log.Lmicroseconds
 )
 
+var LogFile = os.Stderr
+
 var InfoLogger = NewErrorLogger(os.Stderr, "INFO: ")
 var WarningLogger = NewErrorLogger(os.Stderr, "WARNING: ")
 var ErrorLogger = NewErrorLogger(os.Stderr, "ERROR: ")
