@@ -73,14 +73,14 @@ func UpdateLogLevel(newLevel string) error {
 	return nil
 }
 
-func SetInfoOutput(destination *os.File) {
+func SetInfoOutput(destination io.Writer) {
 	InfoLogger = NewErrorLogger(destination, "INFO: ")
 }
 
-func SetWarningOutput(destination *os.File) {
+func SetWarningOutput(destination io.Writer) {
 	WarningLogger = NewErrorLogger(destination, "WARNING: ")
 }
 
-func SetErrorOutput(destination *os.File) {
+func SetErrorOutput(destination io.Writer) {
 	ErrorLogger = NewErrorLogger(destination, "ERROR: ")
 }
